@@ -58,6 +58,6 @@ hdu.header['CTYPE2']='y in kpc'
 hdu.header['CTYPE3']='z in kpc'
 
 hdulist=py.HDUList(hdu)
-hdulist.writeto('CO_m82_d.fits')
+hdulist.writeto('CO_m82_torus_v1.fits')
 
 

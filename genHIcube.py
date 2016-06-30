@@ -10,7 +10,7 @@ m_H1 = 1.67e-24 #g
 
 sigma = 0.25 #g*cm^-2
 rho = sigma/(2*h_0*kpc2cm) #g*cm^-3
-H1 = rho/m_H1 #cm^-3
+H1 = rho/m_H1/4. #cm^-3
 
 xmin = -2.0
 xmax = +2.0
@@ -63,6 +63,6 @@ hdu.header['CTYPE2']='y in kpc'
 hdu.header['CTYPE3']='z in kpc'
 
 hdulist=py.HDUList(hdu)
-hdulist.writeto('HI_m82_d.fits')
+hdulist.writeto('HI_m82_g4.fits')
 
 
